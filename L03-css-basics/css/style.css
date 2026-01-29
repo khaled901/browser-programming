@@ -1,0 +1,64 @@
+/* Step 3 — Typography */
+body {
+  font-family: Arial, sans-serif;   /* element selector */
+  line-height: 1.6;
+  margin: 0;
+}
+
+h1 { font-size: 2rem; }
+h2 { font-size: 1.5rem; }
+
+/* Step 5 — Header & Footer (group selector) */
+header,
+footer {
+  background: #f2f2f2;
+  padding: 1rem 1.25rem;
+}
+
+/* Step 8 + Step 4 — Layout constraint + spacing */
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1.25rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+/* Step 6 — Navigation (descendant + pseudo-class) */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Step 7 — Responsive images (exact rules) */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Step 2 — Class + ID selectors (adjust to your HTML if needed) */
+.card {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background: #fafafa;
+}
+
+#works {
+  padding-top: 0.5rem;
+}
