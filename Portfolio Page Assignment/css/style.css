@@ -1,0 +1,152 @@
+/* ===== Base ===== */
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  background: #f8fafc;
+  color: #1e293b;
+  transition: all 0.3s ease;
+}
+
+h1 { font-size: 2.2rem; margin-bottom: 0.3em; }
+h2 { font-size: 1.6rem; margin-bottom: 0.5em; }
+
+/* ===== Layout ===== */
+header,
+footer {
+  background: #ffffff;
+  padding: 1.2rem 1.5rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+section {
+  margin-bottom: 2.5rem;
+}
+
+/* ===== Navigation ===== */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #2563eb;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #1d4ed8;
+}
+
+/* ===== Images ===== */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ===== Skills ===== */
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 1rem;
+}
+
+.skill-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-size: 14px;
+}
+
+/* ===== Projects ===== */
+.project-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 18px;
+  margin-bottom: 16px;
+  transition: 0.2s;
+}
+
+.project-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+.project-card a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.project-card a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Buttons ===== */
+button {
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  background: white;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-right: 10px;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #f1f5f9;
+}
+
+/* ===== Footer ===== */
+footer {
+  margin-top: 40px;
+}
+
+/* ===== Dark Mode ===== */
+body.dark {
+  background: #0f172a;
+  color: #e2e8f0;
+}
+
+body.dark header,
+body.dark footer {
+  background: #020617;
+  border-color: #1e293b;
+}
+
+body.dark nav a {
+  color: #8ab4f8;
+}
+
+body.dark .skill-card,
+body.dark .project-card {
+  background: #1e293b;
+  border-color: #334155;
+}
+
+body.dark button {
+  background: #1e293b;
+  color: #e2e8f0;
+  border-color: #334155;
+}
+
+body.dark button:hover {
+  background: #334155;
+}
